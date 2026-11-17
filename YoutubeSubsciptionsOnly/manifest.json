@@ -2,12 +2,19 @@
   "manifest_version": 3,
   "name": "YouTube Subscriptions Only",
   "description": "Chrome extension that removes YouTube FYP and sidebar FYP",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*", "*://youtube.com/*"],
-      "js": ["js/index.js"]
+      "js": [
+        "js/routing.js",
+        "js/css.js",
+        "js/styles.js"
+      ]
     }
+  ],
+  "permissions": [
+    "activeTab"
   ],
   "icons": {
     "128": "img/128.png",
