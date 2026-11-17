@@ -13,9 +13,6 @@
       ]
     }
   ],
-  "permissions": [
-    "activeTab"
-  ],
   "icons": {
     "128": "img/128.png",
     "96": "img/96.png",
